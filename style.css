@@ -1,0 +1,87 @@
+@charset "UTF-8";
+
+body{
+    background-color:white;
+    color:rgba(0, 0, 0, 1);
+
+}
+
+header#cabecalho figure.icones{
+    position: absolute;
+    top:-2px;
+    left: 900px;
+}
+section#corpo{
+    /*exibição em blocos*/
+    display: block;
+    width: 500px;
+    float: left;
+   
+}
+section#corpo img#motosGrandes{
+    position: relative;
+    left: -10px;
+}
+
+
+aside#lateral{
+    display: block;
+    width: 400px;
+    float:right;
+    background-color:#eeee;
+    margin-bottom: 300px;
+    padding-left: 20px;
+    padding-right: -25px;
+
+}
+    img.whatsAtendimento{
+        position: absolute;
+      bottom: 30px;
+      right: 60px;
+    }
+    hgroup.comunicacao h1{
+        font-family: Arial, sans-serif;
+        size: 16px;
+        text-align: center;
+
+    }
+     hgroup.comunicacao h2{
+        font-family: Arial, sans-serif;
+        font-size: 12px;
+        text-align: center;
+
+    }
+
+
+
+div#motos{
+    width: 1320px;
+    display: inline-flex;
+    border-top: 1px solid #b9b6b6 ;
+}
+div#motos h1{
+    position: absolute;
+    font-family: Arial, Helvetica, sans-serif;
+    left: 600px;
+    top: 560px;
+    font-size: 40px;
+    
+}
+
+footer#rodape{
+    clear: both;
+    background-color:#eeeeee;
+   text-align: center;
+    
+   
+    
+}
+
+footer#rodape p{
+    font-family: Arial,sans-serif;
+    color: grey;
+    
+    
+}
+
+
