@@ -13,85 +13,218 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+    <body>
 
-    <header id="cabecalho">
+        <header>
 
-        <figure class="logoMegaMotos"><!--Resultado semántico-->
-            <img src='MegaMotosFotos/LogoMegaMotos.png'/>
-        </figure>
-
-        <figure class="icones">
-            <img src="MegaMotosFotos/WhatsContato.PNG"/> &nbsp; &nbsp;
-           <img src="MegaMotosFotos/FacebookLogo-pequeno.png"/>
-           <img src="MegaMotosFotos/InstagramLogo-pequeno.png"/>
-           <img src="MegaMotosFotos/whatsappLogo-pequeno.png"/>
-        </figure>
-        
-    </header>
-
-    <d id="interface">
-
-        <section id="corpo">
-            
-            <img id="motosGrandes" src = 'MegaMotosFotos/motos-grande-ft.PNG'/>
-
-
-           
-    
-    
-
-        </section>
-        
-        
-        <aside id="lateral">
-            <hgroup class='comunicacao'>
-                <h1>
-                 Cotação
-
-                </h1>
-               
-                <h2>Nome:</h2>  <br>
-                <h2>Email:</h2> <br>
-                <h2>Telefone:</h2>
-                
-            </hgroup>
-            <img class="whatsAtendimento" src="MegaMotosFotos/AtendimentoWhatsapp.PNG">
-        </aside>
-        <div id="motos">
-            <h1>Dafra</h1>
-            <img src="MegaMotosFotos/CitycomHd.PNG">
-            <img src="MegaMotosFotos/Maxsym.PNG">
-            <img src="MegaMotosFotos/Horizon.PNG">
-            <img src="MegaMotosFotos/Apache.PNG">
-            <img src="MegaMotosFotos/Nh.PNG">
-            <img src="MegaMotosFotos/_CitycomS.PNG">
-            
-
-        </div>
-     
-
-        <footer id="rodape">
 
             <figure class="logoMegaMotos"><!--Resultado semántico-->
-                <img src='MegaMotosFotos/LogoMegaMotos.png'/>
-
+               <img src='MegaMotosFotos/LogoMegaMotos.png'/>
             </figure>
-            <p > &copy; 2020 Mega Motos Todos os direitos reservados.</p>
 
-            <h1>Contato</h1>
-            <p>7140420904</p>
+
+            <div class="icones">
+                <div>
+                 <a href=""target="_blank"> <img src="MegaMotosFotos/WhatsContato.PNG"/></a>
+                </div>
+            
+                <div>
+                    <a href="https://www.facebook.com/Megamotosba"target="_blank"><img src="MegaMotosFotos/FacebookLogo-pequeno.png"/></a>
+                </div>
+                <div>
+                    <a href="https://www.instagram.com/megamotosba/"target="_blank"><img src="MegaMotosFotos/InstagramLogo.png"/></a>
+                </div>
+                <div>
+                 <a href="https://api.whatsapp.com/send?1=pt_BR&phone=5571992094211&text=Ol%C3%A1!%20vim%20atrav%C3%A9s%20do%20SITE"target="_blank"><img src="MegaMotosFotos/whatsappLogo-pequeno.png"/></a>
+                 </div>
+            </div>
+
+
+        </header>
+
+        <main>
+            <div class="motograde">
+            <img  src = 'MegaMotosFotos/motos-grande-ft.PNG'/>
+            </div>
+
+
+
+
+
+        </main>
+
+
+        <aside id="lateral">
+
+            <div class='comunicacao'>
+               
+                <h3>
+                    Cotação
+                </h3>
+                <div class="edtForm">
+                    <form class="form">
+                        
+                        
+                        <input class="field" placeholder="Nome*" name="Nome" >
+                        <input class="field" placeholder="Email*" name="Email">
+                        <input class="field" placeholder="Telefone*" name="Telefone">
+
+                        <select name="Motos" class="select"  >
+                            <option value="CITYCOM HD 300 ABS">HD 300 ABS</option>
+                            <option value="MAXSYM 400I ABS">MAXSYM 400I ABS</option>
+                            <option value="HORIZON 150">HORIZON 150</option>
+                            <option value="NH 190">NH-190</option>
+                            <option value="APACHE 200">APACHE-200</option>
+                            <option value="CITYCOM S 300i">NH-190</option>
+
+                            
+                        </select>
+                        <textarea class="caixaTexto" name="Menssagens"placeholder="Menssagens"></textarea>
+                        
+                    </form>   
+                    <div id="bt">
+                        <button class="btnAside">Enviar</button>
+                    </div>
+               </div>   
+
+            </div>
+            
+        </aside>
+
+        <section>
         
-            <p>Av. Santos Dumont, Nº 4865, Recreio de Ipitanga, Lauro de Freitas, após o Hospital Menandro (Sentido Salvador).</p>
-            <figure class="fundologo">
-                <a href="https://www.facebook.com/Megamotosba" target="_blank"><img src="MegaMotosFotos/FundofaceLogo.PNG"/></a>
-                <a href="https://www.instagram.com/megamotosba/" target="_blank"> <img src="MegaMotosFotos/FundoInstaLogo.PNG"></a>
-                <a href="https://api.whatsapp.com/send?1=pt_BR&phone=5571992094211&text=Ol%C3%A1!%20vim%20atrav%C3%A9s%20do%20SITE." target="_blank"><img src="MegaMotosFotos/FundoWhatsLogo.PNG"></a>
-            </figure>
-            <h1 >Newsletter</h1>
-            <p>Quer receber promoções e novidades do mundo duas rodas?</p>
+        <div class="atendimento">
+            <div class="atendLogo">
+            <img src='MegaMotosFotos/AtendimentoWhatsapp.PNG' />
+            </div>
+           
+        </div>
+
+        <div id="wrap">
+           
+                
+            <hr size="0.3" color="#e3e0e0"> <h3>Dafra</h3>
+            
+        </div>
+
+        <div class="conteiner">
+           
+            <div class="imagem">
+                <img src="MegaMotosFotos/citycom-hd-300-abs_117090c4jpeg.jpg">
+                <h2>CITYCOM HD 300 ABS</h2>
+                <p>R$22.990,00</p>
+                <div id="botao">
+                    <button class="btn">Ver detalhes</button>
+                </div>
+           </div>
+
+           <div class="imagem">
+                <img src="MegaMotosFotos/maxsym-400i-abs_1083da67jpeg.jpg">
+                <h2>MAXSYM 400I ABS</h2>
+                <p>R$22.990,00</p>
+                <div id="botao">
+                    <button class="btn">Ver detalhes</button>
+                </div>
+            </div>
+
+            <div class="imagem">
+                <img src="MegaMotosFotos/horizon-150_1065a113jpeg.jpg">
+               <h2>HORIZON 150</h2>
+                <p>R$22.990,00</p>
+                <div id="botao">
+                    <button class="btn">Ver detalhes</button>
+                </div>
+            </div>
+            <div class="imagem">
+                <img src="MegaMotosFotos/apache-200_10467aa7jpeg.jpg">
+                <h2>APACHE 200</h2>
+                <p>R$22.990,00</p>
+                <div id="botao">
+                    <button class="btn">Ver detalhes</button>
+                </div>
+            </div>
+            
+            <div class="imagem">
+                <img src="MegaMotosFotos/nh-190_16870f20jpeg.jpg">
+                <h2>NH 190</h2>
+                <p>R$22.990,00</p>
+                <div id="botao">
+                    <button class="btn">Ver detalhes</button>
+                </div>
+            </div>
+            <div class="imagem">
+             <img src="MegaMotosFotos/citycom-hd-300-abs_117090c4jpeg.jpg">
+             <h2>CITYCOM 300 CBS</h2>
+             <p>R$22.990,00</p>
+                <div id="botao">
+                    <button class="btn">Ver detalhes</button>
+                </div>
+            </div>
+        
+
+
+        </div>
+    </section>
+
+        <footer>
+            <div class="fundao">
+                <div class="logofundo">
+                    <div>
+
+                        <img src='MegaMotosFotos/LogoMegaMotos.png'/>
+
+
+                        <p > &copy; 2020 Mega Motos Todos os direitos reservados.</p>
+                    </div>
+
+
+
+                </div>
+                <div class="meiofundo">
+                    <div class="indereco">
+
+                        <h1>Contato</h1>
+                    </div>
+                    <div class="numero">
+                        <p>7140420904</p>
+                        <p>Av. Santos Dumont, Nº 4865, Recreio de Ipitanga, Lauro de Freitas,<br> Hospital Menandro (Sentido Salvador).</p>
+                    </div>
+                    <div class="iconesfundo">
+                        <div>
+                            <a href="https://www.facebook.com/Megamotosba" target="_blank"><img src="MegaMotosFotos/FundofaceLogo.PNG"/></a>
+    
+                        </div>
+                        <div>
+                            <a href="https://www.instagram.com/megamotosba/" target="_blank"> <img src="MegaMotosFotos/FundoInstaLogo.PNG"></a>
+    
+                        </div>
+                        <div>
+                            <a href="https://api.whatsapp.com/send?1=pt_BR&phone=5571992094211&text=Ol%C3%A1!%20vim%20atrav%C3%A9s%20do%20SITE." target="_blank"><img src="MegaMotosFotos/FundoWhatsLogo.PNG"></a>
+    
+                        </div>
+
+                    </div>
+
+                
+
+
+                </div>
+           
+                <div class="informacao">
+                    <h1>Newsletter</h1>
+                    <p>Quer receber promoções e novidades do mundo duas rodas?</p>
+                    <div class="botoes">
+                        <input class="fundoField" placeholder="Nome" name="Nome" ><br>
+                        <input class="fundoField" placeholder="Email" name="Email">
+                        <div>
+                            <button class="btnFundo">Enviar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </footer>
-    </div>
-</body>
+
+    </body>
 
 </html>

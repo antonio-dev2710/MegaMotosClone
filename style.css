@@ -1,87 +1,321 @@
 @charset "UTF-8";
+/*grid
+-divisão de toda a página em linhas e colunas
+-coloca elementos onde quiser nessa div
+-grid duas dimensões(colunas e linhas)
+-flexbox:uma dimensão(ou coluna ou linha)
+-um complementa o trabalho do outro*/
 
-body{
-    background-color:white;
-    color:rgba(0, 0, 0, 1);
+/*display:grid-vai iníciar dizendo que é um grid
+grid-template-columns-separar em colunas
+grid-template-rows-separa em linhas
+grid-gap são os espassamentos
+grid-template-areas-separa por áreas*/
+
+/*exitem 6 propeidades para alinhamento
+justify-content
+aling-contet
+justify-self
+align-self
+
+1. justify e align
+sabendo q o grid é bidimensional, nós temos x e o y
+o x é o horizontal, da esquerda para direita
+y vertical, de cima para baixo*/
+html, body{
+    margin: 0;
+    padding: 0;
+    
+   background: white;
+   
+}
+@media screen and (max-width:768px){
+section,aside,footer,aside{ width: 100%;
+padding: 0px;
+}
 
 }
 
-header#cabecalho figure.icones{
-    position: absolute;
-    top:-2px;
-    left: 900px;
-}
-section#corpo{
-    /*exibição em blocos*/
+/*fr a coluna é flexível*/
+/*imagem responsíva*/
+img {
+    max-width: 100%;
     display: block;
-    width: 500px;
+    
+}
+/*cabecalho-início*/
+header{ 
+    display: flex;
+    justify-content:space-between ;
+  flex-wrap: wrap;
+  padding: 15px;
+    
+}
+div.icones{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+
+/*cabecalho-fim*/
+
+/*corpo-início*/
+main{
+    display: flex;
     float: left;
+    flex-wrap: wrap;
    
 }
-section#corpo img#motosGrandes{
-    position: relative;
-    left: -10px;
+div.motograde img {
+    width: 1050px;
+   display: flex;
+
+
+    
 }
+/*corpo-fim*/
 
-
+/*lateral-início*/
 aside#lateral{
+   display:flex;
+    flex-wrap: wrap;
+    background-color: #dddd;
+   
+   
+}
+aside#lateral h3{
     display: block;
-    width: 400px;
-    float:right;
-    background-color:#eeee;
-    margin-bottom: 300px;
-    padding-left: 20px;
-    padding-right: -25px;
-
+    text-align: center;
+    margin-top: 10px;
+    font-size: 30px;
 }
-    img.whatsAtendimento{
-        position: absolute;
-      bottom: 30px;
-      right: 60px;
-    }
-    hgroup.comunicacao h1{
-        font-family: Arial, sans-serif;
-        size: 16px;
-        text-align: center;
 
-    }
-     hgroup.comunicacao h2{
-        font-family: Arial, sans-serif;
-        font-size: 12px;
-        text-align: center;
-
-    }
-
-
-
-div#motos{
-    width: 1320px;
-    display: inline-flex;
-    border-top: 1px solid #b9b6b6 ;
+.form{
+   
+    margin-left: 30px;
+   padding-bottom: 12.4px;
+   
 }
-div#motos h1{
-    position: absolute;
+
+
+.field{
+ border: 1px solid;
+    margin-bottom: 12px;
+    padding: 0px 70px 30px 15px;
+   border-radius: 5px 5px 10px 5px;
+   box-shadow:black;
+}
+.select{
+   
+    margin-bottom: 12px;
+    padding: 10px 80px 10px 15px;
+   border-radius: 5px 5px 10px 5px;
+    text-align: center;
+    font-size: 15px;
+    box-shadow:black;
+}
+
+.caixaTexto{
+    resize:none;
+    padding:10px 80px 60px 10px ;  
+    box-shadow:black;
+}
+#bt{display: flex;
+   justify-content: center;
+  
+   margin: 0px;
+   padding-top: 12px;
+  
+}
+
+
+.btnAside{
     font-family: Arial, Helvetica, sans-serif;
-    left: 600px;
-    top: 560px;
-    font-size: 40px;
+    background-color: rgb(196, 7, 7);
+    color: white;
+    padding: 12px 80px 12px 80px;
+    border-radius: 20px 20px 20px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+/*lateral-fim*/
+
+/*section-início*/
+
+.atendimento div.atendLogo{
+    position: relative;
+    display: flex;
+    flex: wrap;
+    justify-content: flex-end;   
+    margin: 15px;
+    padding: 5px;
     
 }
 
-footer#rodape{
-    clear: both;
-    background-color:#eeeeee;
-   text-align: center;
-    
+div#wrap  {
+   
+   padding-bottom: 50px;
+   margin: 10px;
    
     
 }
 
-footer#rodape p{
-    font-family: Arial,sans-serif;
-    color: grey;
+div#wrap h3{
     
-    
+    display: table;
+    margin: 0 auto;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: -34px;
+    font-size: 40px;
+    background: white;   
+}
+
+/*div-início*/
+div.conteiner{
+   
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+
+    padding-bottom: 95px;
 }
 
 
+div.conteiner div.imagem{
+    border-radius: 10px 10px 10px ;
+    box-shadow: 2px 2px 2px rgb(199, 196, 196) ;
+    margin: 10px;
+    padding: 10px; 
+}
+
+
+
+.imagem img{
+    width: 240px;
+
+
+}
+
+.conteiner div h2{
+   
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    margin-top: 5px;
+}
+
+.conteiner div p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-style:oblique;
+    color: #747070;
+    font-size: 12px;
+
+
+}
+div#botao{
+    padding-bottom:90px ;
+    display: flex;
+    justify-content: center;
+}
+.btn{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(224, 7, 7);
+    color: white;
+    padding: 10px 50px 10px 50px;
+    font-size: 15px;
+    cursor: pointer;
+    border: none;
+    border-radius: 20px 20px 20px;
+}
+
+/*div-fim*/
+
+/*section-fim*/
+
+/*fundoInício*/
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+   margin: 0px;
+    clear: both;
+    padding: 0px;
+    background: rgb(235, 232, 232);
+   
+    
+}
+div.fundao{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+
+
+div.logofundo div{
+    font-size: 14px;
+    margin-top: 5px;
+    padding: 5px;
+}
+
+div.meiofundo{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    margin: 20px;
+
+}
+div.indereco h1{
+    font-family: Arial, Helvetica, sans-serif;
+ font-size: 25px;
+    
+}
+div.numero p{
+    
+    margin: 2px;
+    padding:-10%;
+}
+div.iconesfundo{
+    display: flex;
+    
+    padding-bottom: 1px;
+}
+
+div.iconesfundo div{
+    margin: 10px;
+
+}
+div.informacao {
+    padding: 10px 5px 10px 5px;
+    margin:15px ;
+   
+}
+div.informacao h1{
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: -14px;
+}
+
+.fundoField{
+   margin: 10px;
+   
+   border: 1px #494747 solid;
+    font-size: 14px;
+    padding: 12px 70px 12px 10px;
+    border-radius: 20px 20px 20px;
+    color: #ddd;
+    
+}
+.btnFundo{
+    background-color: rgb(224, 7, 7);
+    color: white;
+    padding: 10px 50px 10px 50px;
+    font-size: 15px;
+    cursor: pointer;
+    border: none;
+    border-radius: 20px 20px 20px;
+    margin: 10px;
+}
